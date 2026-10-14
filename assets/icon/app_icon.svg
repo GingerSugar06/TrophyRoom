@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2B3A8C"/>
+      <stop offset="0.55" stop-color="#16204F"/>
+      <stop offset="1" stop-color="#0A0F28"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.38" r="0.6">
+      <stop offset="0" stop-color="#FFD66B" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#FFB030" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFB030" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F29A1F"/>
+      <stop offset="0.35" stop-color="#FFE08A"/>
+      <stop offset="0.7" stop-color="#FFC247"/>
+      <stop offset="1" stop-color="#E5830F"/>
+    </linearGradient>
+    <linearGradient id="goldv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A6"/>
+      <stop offset="1" stop-color="#E88A14"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5B6BC9"/>
+      <stop offset="1" stop-color="#2A3680"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#02040F" flood-opacity="0.6"/>
+    </filter>
+    <clipPath id="sq"><rect width="1024" height="1024" rx="232"/></clipPath>
+  </defs>
+  <g clip-path="url(#sq)">
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <rect width="1024" height="1024" fill="url(#spot)"/>
+    <!-- ışık huzmeleri -->
+    <g fill="#FFE9A6" opacity="0.07">
+      <path d="M512 90 L120 1024 L330 1024 Z"/><path d="M512 90 L694 1024 L904 1024 Z"/>
+    </g>
+    <!-- defne dalları -->
+    <g fill="none" stroke="#FFC247" stroke-width="14" stroke-linecap="round" opacity="0.8">
+      <path d="M232 770 C150 650 150 470 236 340"/>
+      <path d="M792 770 C874 650 874 470 788 340"/>
+    </g>
+    <g fill="#FFC247" opacity="0.8">
+      <ellipse cx="170" cy="640" rx="16" ry="34" transform="rotate(-35 170 640)"/><ellipse cx="170" cy="540" rx="16" ry="34" transform="rotate(-18 170 540)"/>
+      <ellipse cx="190" cy="440" rx="16" ry="34" transform="rotate(5 190 440)"/><ellipse cx="226" cy="360" rx="16" ry="34" transform="rotate(28 226 360)"/>
+      <ellipse cx="854" cy="640" rx="16" ry="34" transform="rotate(35 854 640)"/><ellipse cx="854" cy="540" rx="16" ry="34" transform="rotate(18 854 540)"/>
+      <ellipse cx="834" cy="440" rx="16" ry="34" transform="rotate(-5 834 440)"/><ellipse cx="798" cy="360" rx="16" ry="34" transform="rotate(-28 798 360)"/>
+    </g>
+    <!-- kupa -->
+    <g filter="url(#sh)">
+      <!-- kulplar -->
+      <path d="M338 300 C226 300 214 450 356 506" fill="none" stroke="url(#goldv)" stroke-width="34" stroke-linecap="round"/>
+      <path d="M686 300 C798 300 810 450 668 506" fill="none" stroke="url(#goldv)" stroke-width="34" stroke-linecap="round"/>
+      <!-- kase -->
+      <path d="M330 232 L694 232 C694 420 660 540 512 572 C364 540 330 420 330 232 Z" fill="url(#gold)"/>
+      <!-- sap -->
+      <path d="M470 566 L554 566 L566 690 L458 690 Z" fill="url(#goldv)"/>
+      <!-- taban -->
+      <rect x="392" y="690" width="240" height="54" rx="14" fill="url(#gold)"/>
+      <rect x="352" y="744" width="320" height="76" rx="20" fill="url(#base)"/>
+    </g>
+    <!-- kase parlaması -->
+    <path d="M372 262 L420 262 C418 380 440 470 486 520 C410 486 372 400 372 262 Z" fill="#FFFFFF" opacity="0.35"/>
+    <!-- yıldız -->
+    <path d="M512 306 L542 372 L614 380 L560 428 L575 498 L512 462 L449 498 L464 428 L410 380 L482 372 Z" fill="#FFF6D6" opacity="0.95"/>
+    <path d="M512 330 L534 378 L586 384 L547 419 L558 470 L512 444 L466 470 L477 419 L438 384 L490 378 Z" fill="#F29A1F"/>
+    <!-- plaket yazısı -->
+    <g fill="#9AA6F0" opacity="0.9"><rect x="418" y="772" width="188" height="12" rx="6"/><rect x="452" y="794" width="120" height="10" rx="5" opacity="0.7"/></g>
+  </g>
+  <rect width="1024" height="1024" rx="232" fill="none" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="3"/>
+</svg>
